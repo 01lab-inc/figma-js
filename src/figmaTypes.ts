@@ -786,6 +786,8 @@ export interface TypeStyle {
   readonly textCase?: 'UPPER' | 'LOWER' | 'TITLE';
   /** Text decoration applied to the node, default is none */
   readonly textDecoration?: 'STRIKETHROUGH' | 'UNDERLINE';
+  /** Dimensions along which text will auto resize, default is that the text does not auto-resize */
+  readonly textAutoResize?: 'HEIGHT' | 'WIDTH_AND_HEIGHT';
   /** Line height as a percentage of the font size. Only returned when lineHeightPercent is not 100. */
   readonly lineHeightPercentFontSize?: number;
 }
